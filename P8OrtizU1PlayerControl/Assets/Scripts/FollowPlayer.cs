@@ -6,7 +6,7 @@ public class FollowPlayer : MonoBehaviour
 {
     public GameObject player;
     private Vector3 offset = new Vector3(0, 5, -7);
-    private Vector3 backwards = new Vector3(0, 4, 1);
+    
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +19,5 @@ public class FollowPlayer : MonoBehaviour
     {
         // Offset the camera behind the player by adding to the player's position
         transform.position = player.transform.position + offset;
-        if (Input.GetKey(KeyCode.A)) ;
     }
 }
